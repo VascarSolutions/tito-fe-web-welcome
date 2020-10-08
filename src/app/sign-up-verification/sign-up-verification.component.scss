@@ -1,0 +1,31 @@
+.container-fluid {
+    background-image: url(../../assets/img/map_background.png);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    img {
+        max-width: 100%;
+    }
+
+    .bckg {
+        background-image: url(../../assets/img/login-bckg.png);
+        background-position-y: bottom;
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: 70vw;
+        max-width: 500px;
+    }
+}
+
+.logo {
+    width: 15vh;
+    height: 15vh;
+    margin-top: 5vh;
+}

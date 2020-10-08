@@ -1,7 +1,7 @@
 export const environment = {
-  production: true,
-  apiUrl: 'https://api-prod.titoapp.org',
-  // apiUrl: "https://api.titoapp.org",
+  production: false,
+  qa: true,
+  apiUrl: 'https://api-qa.titoapp.org',
   initLat: 40.7579787,
   initLng: -73.9877313,
   defaultRadius: 50,
@@ -14,21 +14,15 @@ export const environment = {
   minUserPrice: 50,
   maxUserPrice: 12000,
   minMediaDisplayScore: 4,
-  s3PictureExpirationTime:
-    30 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/,
+  s3PictureExpirationTime: 30 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/,
   titleMaxLength: 48,
   descriptionMaxLength: 200,
   instructionMaxLength: 200,
   announcementTitleMaxLength: 48,
   announcementMaxLength: 160,
-  acceptedLibraryFileTypes: [
-    'image/jpeg',
-    'image/png',
-    'video/quicktime',
-    'video/mp4',
-    'video/webm',
-  ],
+  acceptedLibraryFileTypes: ['image/jpeg', 'image/png', 'video/quicktime', 'video/mp4', 'video/webm'],
   acceptedCoverPhotosFileTypes: ['image/jpeg', 'image/png'],
+  // STRIPE_PUBLISHABLE_KEY: 'pk_test_5PkuBVP0j4EBxLuLe3vYYPvJ',
   STRIPE_PUBLISHABLE_KEY: 'pk_live_mbX2q7zEIwEj9vSAP76axhvo',
   customEmojis: [
     {
@@ -38,7 +32,7 @@ export const environment = {
       emoticons: [],
       keywords: ['circle', 'green'],
       imageUrl: '../assets/emojis/large_green_circle.png',
-      native: '🟢',
-    },
-  ],
+      native: '🟢'
+    }
+  ]
 };

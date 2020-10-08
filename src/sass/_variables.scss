@@ -1,0 +1,162 @@
+$primary:       #3187ef !default;
+$secondary:     #3187ef !default;
+$success:       #00d472 !default;
+$mission:       #00d472;
+// Name's not a typo, mon ami. It is intended so Bootstrap's blue color variable is not overriden.
+$bleu:          #5491f2;
+$scarlet:       #fb635d;
+$blackest:      #000000;
+$black:         #4d4d4d;
+$gray:          #e6e6e6; // Border
+$light:         #efefef; // Fill
+$pink:          #ff3874;
+$white:         #ffffff;
+$error:         red;
+$light-gray:    #F7F7F7;
+$dark-gray:     #575F7B;
+$dark-blue:     #203658;
+$darker-blue:   #14243A;
+$yellow:        #F7D77A;
+// $secondary:     $gray-600 !default;
+$success:       $bleu !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
+
+$tito-primary: (
+    50: $primary,
+    100: $primary,
+    200: $primary,
+    300: $primary,
+    400: $primary,
+    500: $primary,
+    600: $primary,
+    700: $primary,
+    800: $primary,
+    900: $primary,
+    A100: $primary,
+    A200: $primary,
+    A400: $primary,
+    A700: $primary,
+    contrast: (
+      50: $blackest,
+      100: $blackest,
+      200: $blackest,
+      300: $blackest,
+      400: $blackest,
+      500: $black,
+      600: $black,
+      700: $black,
+      800: $black,
+      900: $black,
+      A100: $blackest,
+      A200: $black,
+      A400: $black,
+      A700: $black,
+    )
+);
+
+$tito-red: (
+    50: $scarlet,
+    100: $scarlet,
+    200: $scarlet,
+    300: $scarlet,
+    400: $scarlet,
+    500: $scarlet,
+    600: $scarlet,
+    700: $scarlet,
+    800: $scarlet,
+    900: $scarlet,
+    A100: $scarlet,
+    A200: $scarlet,
+    A400: $scarlet,
+    A700: $scarlet,
+    contrast: (
+      50: $blackest,
+      100: $blackest,
+      200: $blackest,
+      300: $blackest,
+      400: $blackest,
+      500: $black,
+      600: $black,
+      700: $black,
+      800: $black,
+      900: $black,
+      A100: $blackest,
+      A200: $black,
+      A400: $black,
+      A700: $black,
+    )
+);
+
+$tito-blue: (
+    50: $bleu,
+    100: $bleu,
+    200: $bleu,
+    300: $bleu,
+    400: $bleu,
+    500: $bleu,
+    600: $bleu,
+    700: $bleu,
+    800: $bleu,
+    900: $bleu,
+    A100: $bleu,
+    A200: $bleu,
+    A400: $bleu,
+    A700: $bleu,
+    contrast: (
+      50: $blackest,
+      100: $blackest,
+      200: $blackest,
+      300: $blackest,
+      400: $blackest,
+      500: $black,
+      600: $black,
+      700: $black,
+      800: $black,
+      900: $black,
+      A100: $blackest,
+      A200: $black,
+      A400: $black,
+      A700: $black,
+    )
+);
+
+$tito-green: (
+    50: $mission,
+    100: $mission,
+    200: $mission,
+    300: $mission,
+    400: $mission,
+    500: $mission,
+    600: $mission,
+    700: $mission,
+    800: $mission,
+    900: $mission,
+    A100: $mission,
+    A200: $mission,
+    A400: $mission,
+    A700: $mission,
+    contrast: (
+      50: $blackest,
+      100: $blackest,
+      200: $blackest,
+      300: $blackest,
+      400: $blackest,
+      500: $black,
+      600: $black,
+      700: $black,
+      800: $black,
+      900: $black,
+      A100: $blackest,
+      A200: $black,
+      A400: $black,
+      A700: $black,
+    )
+);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,700');
+$title-font: "Montserrat";
+$text-font: "Roboto";

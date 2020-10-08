@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row h-100 mh-100 bckg">
+    <div
+      class="col d-flex flex-column justify-content-flex-start align-items-center"
+    >
+      <img class="logo" src="assets/img/logo.png" />
+      <div class="card mt-5">
+        <div class="card-body" >
+          <div class="d-flex flex-column align-items-center" *ngIf="loading">
+            <div
+              class="spinner-border text-primary"
+              role="status"
+              style="width: 3rem; height: 3rem"
+            ></div>
+            <span>Loading...</span>
+          </div>
+          <div *ngIf="!loading">
+            <h5 class="card-title text-center">{{ title }}</h5>
+            <p class="card-text text-center">{{ msg }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

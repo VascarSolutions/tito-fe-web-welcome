@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@import './_variables';
+
+@include mat-core();
+
+$tito-app-primary: mat-palette($tito-primary);
+$tito-app-accent:  mat-palette($mat-green, A200, A100, A400);
+$tito-app-warn:  mat-palette($mat-red, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$tito-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$tito-app-theme: mat-light-theme($tito-app-primary, $tito-app-accent, $tito-app-warn);
+$tito-checkbox-theme: mat-light-theme($tito-app-primary, $tito-app-primary);
+@include angular-material-theme($tito-app-theme);
+@include mat-checkbox-theme($tito-checkbox-theme);
+@include mat-radio-theme($tito-checkbox-theme);
