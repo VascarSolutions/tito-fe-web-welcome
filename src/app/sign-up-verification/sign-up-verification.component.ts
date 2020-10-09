@@ -23,7 +23,7 @@ export class SignUpVerificationComponent implements OnInit {
   verifyToken() {
     this.rutaActiva.params.subscribe(async (params) => {
       window.history.replaceState(null, '', '/')
-      if(params) {
+      if(params.token) {
         try {
           this.authServ.activateAccount(params.token, params.userId).subscribe(res => {
             this.loading = false
@@ -33,12 +33,14 @@ export class SignUpVerificationComponent implements OnInit {
             }
           })
         } catch (error) {
+          this.loading = false
           this.title = 'Error!'
           this.msg = 'There has been an error, please try again!';    
         }
       } else {
+        this.loading = false
         this.title = 'Error!';
-        this.msg = 'There has been an error, please try again!';
+        this.msg = 'Invalid Data!';
       }
     });
   }
